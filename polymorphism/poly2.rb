@@ -20,3 +20,31 @@
   # 4
   # I am car, I have 4
   #  wheels
+class Vehicle
+  def wheel(a)
+    
+    if (a==2)
+      puts "I am bike, I have 2 wheels"
+    else 
+      puts "I am car, I have 4 wheels"
+    end
+  end
+end
+class Bike < Vehicle
+  def byke1
+    puts "enter the number of wheels"
+    @a=gets.to_i
+    wheel(@a)
+  end
+end
+class Car < Vehicle
+   def car1
+    puts "enter the number of wheels"
+    @a=gets.to_i
+    wheel(@a)
+  end
+  end
+  bike=Bike.new
+  bike.byke1
+  car=Car.new
+  
